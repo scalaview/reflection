@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+<bean id="mathCourse" class="entity.Course">
+	<property param="name">math</property>
+	<property param="credit">5</property>
+	<property param="desc">
+		数学
+	</property>
+</bean>
+<bean id="stud0" class="entity.Student">
+	<property param="NO">000</property>
+	<property param="name">stud0</property>
+	<property param="course" ref="mathCourse">mathCourse</property>
+</bean>
+</beans>
